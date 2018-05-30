@@ -1,0 +1,25 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-navbar>
+      <ion-title>Menu</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content class="fondo-menu">
+    <h1 class="title fondo" style="padding-top:20%;padding-bottom: 20%;" text-center>OWE</h1>
+    <ion-list>
+      <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)"> 
+        <ion-icon item-start [name]="p.icon" [color]="isActived(p)"></ion-icon>
+        {{p.title}}
+      </button>
+      <button ion-item menuClose (click)="cerrarSesion()"> 
+          <ion-icon item-start name="close-circle"></ion-icon>
+            Salir
+        </button>
+    </ion-list>
+  </ion-content>
+  
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+

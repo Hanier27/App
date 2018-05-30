@@ -1,0 +1,25 @@
+page-login {
+
+
+    .title{
+        font-size: 5em; 
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    ion-item {
+        background: radial-gradient(yellow 0%,black 100%);
+    }
+
+    ion-item ion-icon,ion-label,ion-input {
+        color: white;
+    }
+
+    a span{
+        color: white;
+    }
+
+    .lark {
+        background:whitesmoke;
+        color:black;
+    }
+}

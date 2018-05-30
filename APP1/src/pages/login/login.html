@@ -1,0 +1,30 @@
+
+
+<ion-content padding class="fondo">
+  <h1 class="title" style="margin-top:30%;" text-center>OWE</h1>
+  <ion-card class="fondo" style="margin-top:10%">
+      <ion-list>
+        <ion-item >
+          <ion-icon name="person"  item-left></ion-icon>
+          <ion-label stacked>Email:</ion-label>
+          <ion-input  type="text" placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item >
+          <ion-icon name="key" item-left></ion-icon>
+          <ion-label stacked>Password:</ion-label>
+          <ion-input  type="password" placeholder="Password"></ion-input>
+        </ion-item>
+      </ion-list>
+       
+      
+    <div text-center>
+      <button ion-button block class="lark" (click)="Ingresar()" >Ingresar</button>
+      <a ion-button block clear >
+        Nueva cuenta
+      </a>
+      <a ion-button block clear >
+        Olvide password
+      </a>
+    </div>
+  </ion-card>
+</ion-content>
